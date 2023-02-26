@@ -1,0 +1,43 @@
+.texto_uno{
+    background-color: crimson;
+    color: white;
+    font-size: 38px;
+    padding: 15px 32px;
+    margin: 100px;
+    display: inline-block;
+    position: relative;
+}
+.texto_uno .texto_dos{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    position: absolute;
+    top: 65px;
+    left: 80%;
+    margin-left: -60px;
+    z-index: 1;
+}
+.texto_uno .texto_dos::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-right: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+
+
+
+.texto_uno:hover .texto_dos{
+    visibility: visible;
+}
+/*.texto_uno:hover .texto_dos->se refiere al texto_uno y la accion sobre ello y como resultado en este 
+caso aparece el texto_dos*/

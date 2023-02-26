@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;/*para agregarle color a todo el cuerpo(toda la pag)*/
+}
+p{
+    width: 400px;
+    font-size: 40px;
+    border: 3px solid red;
+    writing-mode: horizontal-tb;/*el texto se puede modificar la horientacion*/
+}
+#texto{
+    text-overflow: ellipsis;/*clip,ellipsis*/
+    white-space: nowrap;/*nowrap=no respeta el contenido del recuadro(siempre queda en una linea)*/
+    overflow: hidden;/*indica q una vez superado el recuadro todo aquel texto q lo exceda se escondera*/
+}
+#parrafo{
+    width: 200px;
+    border: 3px solid brown;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    font-size: 24px;
+    margin: 0;
+    background-color: white;
+    resize: horizontal;/*lo que hacemos es que esta propiedad pueda controlar el tamaño del elemento(el recuadro)*/
+}

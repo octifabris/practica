@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+nav .mobile {
+    display: none;
+}
+
+nav .logo {
+    min-width: 250px;
+}
+
+nav .mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .mobile .header .more button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+nav a:hover {
+    /*para darle color al texto a la hora de pasar el cursor sobre*/
+    color: black;
+    background-color: #00c3ff;
+}
+
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    /*para q nuestro menu aparezca dividido y se expanda a lo largo de la pantalla*/
+    align-items: center;
+    padding: 0px 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+}
+
+nav .desktop .secondary.mini {
+    display: none;
+}
+
+@media screen and (max-width: 853px) {
+
+    nav .logo {
+        min-width: 100px;
+    }
+
+    nav .secondary.full {
+        display: none;
+    }
+
+    nav .secondary.mini {
+        display: block !important;
+    }
+
+    nav .secondary.mini .submenu {
+        background-color: black;
+        position: absolute;
+        display: none;
+        right: 0;
+    }
+
+    nav .secondary.mini:hover .submenu {
+        display: block;
+    }
+
+    /* ~ para seleccionar la capa q esta a un lado de la class more*/
+}
+
+@media screen and (max-width: 500px) {
+    nav .desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+}

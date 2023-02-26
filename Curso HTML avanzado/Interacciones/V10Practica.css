@@ -1,0 +1,33 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+}
+#contenedor{
+    margin: 20px;
+    float: left;
+    width: 80%;
+    height: 180px;
+    border: dotted lightblue;
+}
+#caja1, #caja2, #caja3{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+#caja1{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+#caja2{
+    width: 60px;
+    height: 60px;
+    background-color: greenyellow;
+}
+#caja3{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+}

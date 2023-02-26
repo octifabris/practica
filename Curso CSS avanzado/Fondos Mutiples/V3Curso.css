@@ -1,0 +1,26 @@
+#fondo{
+    padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    background: url(balon2.png)bottom/ 100px no-repeat ; 
+    background-size: contain;/*para q la img ocupe todo el contenido del recuadro*/
+}
+#platomesa{
+    padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    background: url(plato.png) center/180px no-repeat,
+    url(mesa.png) center/cover no-repeat;
+}
+#texto{
+    padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    font-size: 24px;
+    background-color: mediumseagreen;
+    background-clip: content-box;/*el motivo es para tener diferencia con el padding*/
+
+}

@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body {
+    text-align: center;
+    background: #fff;
+}
+
+.total {
+    position: absolute;
+    font-size: 30px;
+    width: 300px;
+    height: fit-content;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    background: linear-gradient(50deg, rgb(52, 52, 185) 20%, cyan 100%);
+    font-family: 'Courier New', 'Courier', sans-serif;
+}
+
+
+span {
+    font-size: 17vw;
+    font-weight: 800;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.a {
+    margin-left: -0.13em;
+}
+
+.b {
+    margin-left: -0.22em;
+}
+
+.c {
+    margin-left: -0.13em;
+}

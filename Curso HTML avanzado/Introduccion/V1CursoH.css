@@ -1,0 +1,72 @@
+*{ /* el asterisco(*) es cuando nos referimos a la pagina completa de forma universal*/
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+header img{
+    width: 100px;
+    margin-left: 44%;
+    margin-top: 1%;
+    border-radius: 100%;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+section{
+    width: 70%;
+    margin: 0 auto;
+}
+article{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px dotted darkgrey;
+}
+article h2{
+    float: left;
+    border-bottom: 2px solid cadetblue ;
+    padding-bottom: 5px;
+    line-height: 1.3em;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+article{
+    margin-left: 20%;
+}
+article p, article ul{
+    margin-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+    line-height: 1.3em;
+    margin-bottom: 1.6em;
+}
+article ul li{
+    margin-left: 15px;
+    list-style: square;
+}
+footer{
+    margin-top: 2em;
+    padding: 1em;
+    width: 100%;
+    background-color: darkslategrey;
+    color: azure;
+    text-align: center;
+}
+footer a:link, footer a:visited{
+    color: azure;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: orange;
+}

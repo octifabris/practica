@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="name"><br><!--el id del input tiene q tener lo mismo q el for del form-->
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="name">
+    </form>
+    
+    <h1>Seleccionar un club de futbol</h1>
+    <form action="action_page.php" target="_blank" method=""> <!--(action)=se usa para indicar a donde 
+        va a guardar el boton de enviar/(self)=especifica el boton enviar->con _self digo q el 
+        form se va a enviar en la misma ventana/->_blank para enviarlo me abre una ventana nueva-->
+        <!--(method="GET")los datos de mi form seran visibles en el campo de direcc de la pag{en inspeccionar}
+        (method="POST")los datos del form estan de manera oculta en inspeccionar-->
+        <input type="radio" id="barcelona" name="club" value="barcelona">
+        <label for="barcelona">Barcelona</label><br>
+        <input type="radio" id="chelsea" name="club" value="chelsea">
+        <label for="chelsea">Chelsea</label><br>
+        <input type="radio" id="juventus" name="club" value="juventus">
+        <label for="juventus">Juventus</label><br>
+        <br>
+        <input type="submit" value="Enviar YA">
+    </form>
+</body>
+</html>

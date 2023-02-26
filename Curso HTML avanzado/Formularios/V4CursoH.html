@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario P3</title>
+</head>
+<body>
+    <form>
+        <br>
+        <label for="fecha de na">Fecha de nacimiento</label>
+        <input type="date" id="fecha de nac" name="f nac">
+    </form>
+
+    <h1>Comprar tickets</h1>
+    <form>
+        <br>
+        <label for="datomax">Fecha de compra</label>
+        <input type="date" name="f comp" id="datomax" max="2020-05-20"><br><!--con max lo q hice 
+            fue crear un valor maximo el cual se puede seleccionar como fecha-->
+    </form>
+
+    <form>
+        <br>
+        <label for="phone">Ingrese su nro:</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{8}" placeholder="123-xxxxxxxx min 8 dig" required>
+        <!--(pattern)el primer[]{} es para los 3 primeros numeros del nro al cual se limita a 3 digitos y valores entre el 0y9-->
+        <input type="submit" value="ENVIAR">
+    </form>
+    <br>
+    <form>
+        <label for="cantidad">Nro de entradas </label><br>
+        <input type="number" id="cantidad" min="1" max="12">
+        <input type="sumbit" value="ENVIAR">
+    </form>
+    <br>
+    <form>
+        <label for="nombre">NOMBRE:</label><br>
+        <input type="text" id="nombre" name="nom" size="11"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" name="pin" id="pin" size="6"><br>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html> 

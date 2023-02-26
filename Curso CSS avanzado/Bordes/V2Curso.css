@@ -1,0 +1,17 @@
+#b{
+    border: 20px solid greenyellow; 
+    width: 250px;
+    height: 250px;  
+    font-size: 22px;
+    padding: 20px;
+    background-color: darkred;
+    color: white;
+    border-image-source: url(marco.png) 100 stretch; /*la imagen se va a situar una en cada esquina*/
+}
+    /*  border-image-slice: 24%; /*y con borim-slic -> lo que hago es cortar la imagen y me la pone como borde*/
+    /*  border-image-repeat: repeat round; /*con round escala la imagen de fondo con el obj q se ajuste*/
+    /*  border-image-width: 30px;/*para controlar el ancho del borde, en el que esta la img*/
+    /*  border-image-outset: 10px;/*q la img que tenga de borde, que se ubique fuera del cont del elemento*/ 
+    
+
+

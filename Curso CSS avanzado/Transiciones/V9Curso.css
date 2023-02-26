@@ -1,0 +1,103 @@
+div.one {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    border-radius: 50%;
+    transition: all 2s;
+}
+
+div.one:hover {
+    width: 300px;
+    background-color: red;
+}
+
+div.two {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    transition: all 1s;
+}
+
+.two {
+    transition-timing-function: linear;
+}
+
+div.two:hover {
+    width: 450px;
+}
+
+.three {
+    background: orange;
+    width: 50px;
+    height: 150px;
+    animation: mover-derecha 2s ease-in;
+    /*direccion, tiempo, tipo de efecto*/
+    animation-delay: 1000ms;
+}
+
+@keyframes mover-derecha {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translate(1000px);
+    }
+}
+
+/*nos va a ayudar al mov de un objeto*/
+.four {
+    background: darkorange;
+    width: 300px;
+    height: 150px;
+    animation: desplazar-derecha 2s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+@keyframes desplazar-derecha {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(300px);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, orange 0%, red 100%);
+    }
+}
+
+.five {
+    background: rgb(248, 111, 111);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation: mover 5s infinite;
+    animation-delay: 1000ms;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(500px);
+        background: linear-gradient(120deg, red 0%, darkred 100%);
+    }
+
+    50% {
+        transform: translateY(500px) translateX(500px);
+        background: linear-gradient(top, blue 0%, darkblue 100%);
+    }
+
+    75% {
+        transform: translateX(0px) translateY(500px);
+        background: linear-gradient(top, orange 0%, orange 100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

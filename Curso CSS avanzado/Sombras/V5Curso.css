@@ -1,0 +1,44 @@
+#a{
+    font-size: 75px;
+    color: white;
+    text-shadow:  1px 1px 25px black,0 0 22px red;/*color,mov horiz,mov vert, dist de sombra*/
+}
+#b{
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    color: yellow;
+    text-shadow: black 3px 3px 1px;
+}
+#c{
+    background-color: coral;
+    width: 400px;
+    height: 150px;
+    font-size: 70px;
+    box-shadow: 10px 20px 20px red;/*cuando le quiero asignar shadow al contorno u objeto, y no solo al texto*/
+}
+#d{
+    background-color: coral;
+    width: 400px;
+    height: 150px;
+    font-size: 70px;
+    box-shadow: black 3px 13px 10px inset;/*inset=hace el sombreado adentro del objeto/box*/
+        /*color, mov horiz,mov vert,cant sombra*/
+}
+.tarjeta{
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px;
+}
+.numero{
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.titulo{
+    padding: 5px;
+}

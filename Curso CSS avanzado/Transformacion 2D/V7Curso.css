@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+#one{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(orange,red);
+    border: 7px solid darkred;
+    transform: translateY(100px);
+    transform: translateX(100px);
+    transform: rotateX(180deg);
+    transform: skewX(10deg);/*para llevar un extremo mas pronunciado q el otro*/
+    transform: scaleX(2);/*para aumentar la escala y entre () la cant de veces*/
+}
+#two{
+    background: linear-gradient(180deg, red, orange);
+    width: 200px;
+    height: 200px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0%{
+        transform: skew(20deg, 20deg)
+    }
+    100%{
+        transform: skew(-20deg, -20deg)
+    }
+}

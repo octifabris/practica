@@ -1,0 +1,42 @@
+.uno{
+    display: flex;
+    justify-content: space-between; /*vamos a alinear los elementos dentro del contenedor flexible*/
+    flex-wrap: wrap; /*obliga a que los elementos pertenezcan a una sola linea y que se puedan incluir sin ningun inconveniente*/
+}
+#b1{
+    border-radius: 25px; /*para esquinas redondeadas*/
+    background-color: greenyellow;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#b2{
+    border-radius: 25px;
+    border: 2px solid blueviolet; /*tamaño de borde, tipo de borde, color de borde*/
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#b3{
+    border-radius: 25px;
+    background-image: url(css.png); /*para ingresar la imagen como fondo del cuadrado de texto*/
+    background-position: left top; /*para seleccionar que parte de la imagen quiero ver*/
+    background-repeat: repeat; /*en caso de que no ocupe todo el tamaño que se repita la imagen*/
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#b4{
+    border-radius: 15px 50px 30px 5px;/*esquina: izq(arr)der(arr)der(ab)izq(ab)*/
+    background-color: red;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#b5{
+    border-radius: 65%;
+    background-color: gold;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}

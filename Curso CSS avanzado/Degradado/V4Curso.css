@@ -1,0 +1,15 @@
+#degradado{
+    border: 2px solid black;
+    width: 480px;
+    height: 480px;
+    background:  repeating-radial-gradient(circle, blue, cyan 15%);/*(linear-gradient) para hacer degradado/indico de donde quiero q arranque el degradado*/
+    /*linear-gradient(lineal), radial-gradient(circular)*/
+}   
+#degradadoLineal{
+    border: 2px solid black;
+    width: 480px;
+    height: 480px;
+    background: repeating-linear-gradient(
+        180deg, yellow, yellow 10px,red, red 20px
+    );/*con el (cant grados)deg puedo modificar la inclinacion de las lineas*/
+}

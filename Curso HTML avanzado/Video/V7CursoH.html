@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <br>
+        <button onclick="playpause()">play/pause</button>
+        <button onclick="Pcompleta()">completa</button>
+        <button onclick="Pnormal()">normal</button>
+        <br><br>
+        <video id="ejemplo" width="360" poster="cielo.png">
+            <!--poster="ruta de acceso del fondo del video para cuando no se reproduce"-->
+            <source src="Video.mp4">
+        </video>
+    </div>
+    <script>
+        var miVideo = document.getElementById("ejemplo")
+        function playpause() {
+            if (miVideo.paused) {
+                miVideo.play();
+            }
+            else
+            miVideo.pause();
+        }
+        function Pcompleta() {
+            miVideo.width = 720;
+        }
+        function Pnormal() {
+            miVideo.width = 360;
+        }
+    </script>
+    <br>
+    <iframe src="https://www.youtube.com/embed/PLg9145ptuAijj9GoHPTcYT8IoQAOchM-n&index=8?controls=0" frameborder="0"></iframe>
+</body>
+</html>
